@@ -1,0 +1,39 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "_assets": [
+        "src/stories/assets/*"
+      ],
+      "_components": [
+        "src/stories/components"
+      ],
+      "_atoms": [
+        "src/stories/components/atoms/index"
+      ],
+      "_molecules": [
+        "src/stories/components/molecules"
+      ],
+      "_organisms": [
+        "src/stories/components/organisms"
+      ],
+      "_styles": [
+        "src/stories/styles"
+      ]
+    },
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "checkJs": false,
+    "module": "ESNext",
+    "moduleResolution": "node",
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
